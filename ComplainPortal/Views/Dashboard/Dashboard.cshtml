@@ -31,12 +31,12 @@
                         <div class="small-box bg-info">
                             <div class="inner">
                                 <h3></h3>
-                                <p>Project</p>
+                                <p>Complain</p>
                             </div>
                             <div class="icon">
                                 <i class=""></i>
                             </div>
-                            <a href="#" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" id="sendemail" class="small-box-footer"> <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -46,12 +46,12 @@
                             <div class="inner">
                                 <h3><sup style="font-size: 20px"></sup></h3>
 
-                                <p>Employee Management</p>
+                                <p>Show Email Templete</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-stats-bars"></i>
                             </div>
-                            <a href="#" class="small-box-footer"><i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="#" id="showtemplte" class="small-box-footer"><i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -90,8 +90,50 @@
 
             </div>
         </section>
-    
-}
+        <div class="modal fade" id="modal-default" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Employee Type</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modelbody">
 
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" id="btnaddnewemptype" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <!-- /.modal -->
+        <!-- ./wrapper -->
+}
+@section MyScripts {
+    <script type="text/javascript">
+        $("#sendemail").click(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/Dashboard/SendEmail',
+                success: function () {
+                    console.log("abc");
+                }
+            });
+        });
+
+        $("#showtemplte").click(function () {
+            $("#modelbody").load("/Dashboard/ViewTemplete", function (e) {
+                $("#modal-default").modal("show");
+            });
+        });
+
+        </script>
+}
 
 

@@ -1,0 +1,9 @@
+﻿<queries>
+  <query>
+    select * from abc
+  </query>
+  <query>
+    select * from abc
+  </query>
+  
+</queries>

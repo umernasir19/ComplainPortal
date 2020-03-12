@@ -1,0 +1,20 @@
+﻿<users>
+  <user>
+    <name>john doe</name>
+    <roles>
+      <role>Admin</role>
+    </roles>
+    <status>Active</status>
+    <createddate></createddate>
+  </user>
+  
+  <user>
+    <name>john john</name>
+    <roles>
+    <role>User</role>
+    </roles>
+    <status>Active</status>
+    <createddate></createddate>
+  </user>
+  
+</users>
