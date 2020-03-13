@@ -1,20 +1,33 @@
 ﻿<users>
   <user>
-    <name>john doe</name>
+    <name>umer.nasir</name>
     <roles>
       <role>Admin</role>
+      <role>Pharmacy</role>
+      <role>Lab</role>
     </roles>
     <status>Active</status>
-    <createddate></createddate>
+    <createddate>03/13/2020</createddate>
   </user>
   
   <user>
-    <name>john john</name>
+    <name>waqar.rasheed</name>
     <roles>
-    <role>User</role>
+    <role>Pharmacy</role>
     </roles>
     <status>Active</status>
-    <createddate></createddate>
+    <createddate>03/13/2020</createddate>
   </user>
-  
+
+  <user>
+    <name>yaseen.zaheer</name>
+    <roles>
+      <role>Lab</role>
+    </roles>
+    <status>Active</status>
+    <createddate>03/13/2020</createddate>
+  </user>
+
+ 
+
 </users>
